@@ -2,10 +2,10 @@ from patient import Patient
 from doctor import Doctor
 
 class Appointment:
-    def __init__(self, doctor, patient, time: str):
+    def __init__(self, doctor, patient, date):
         self.doctor = doctor
         self.patient = patient
-        self.time = time
+        self.date = date
 
-    def get_appointment_details(self) -> str:
-        return f"Appointment: {self.patient.get_name()} with Dr. {self.doctor.get_name()} at {self.time}"
+    def __str__(self):
+        return f"Patient: {self.patient.get_name()}, Doctor: Dr. {self.doctor.get_name()}, Date: {self.date}"
