@@ -5,9 +5,10 @@ class Person:
         self.name = name
         self.age = age
         self.role = role
+
     @abstractmethod
     def perform_task(self):
-        pass  # This is abstract, subclasses should override this
+        raise NotImplementedError("Subclasses must implement this method")
 
     def get_name(self) -> str:
         return self.name
