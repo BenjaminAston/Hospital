@@ -1,4 +1,3 @@
-# doctor.py
 from person import Person
 
 class Doctor(Person):
